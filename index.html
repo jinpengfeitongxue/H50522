@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #eeeeee;
+        }
+        
+        .container {
+            width: 900px;
+            height: 450px;
+            margin: 60px auto;
+            position: relative;
+        }
+        
+        .pic {
+            width: 150px;
+        }
+        
+        .container {
+            background: url(images/77.jpg);
+        }
+        
+        .container img {
+            padding: 10px 10px 10px 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.4);
+            z-index: 1;
+            position: absolute;
+            transition: all 0.5s ease-in;
+        }
+        
+        .container img:hover {
+            z-index: 2;
+            box-shadow: 15px 15px 20px rgba(50, 50, 50, 0.4);
+            transform: rotate(0deg) scale(1.5);
+        }
+        
+        .pic1 {
+            left: 0px;
+            top: 50px;
+            transform: rotate(-5deg);
+        }
+        
+        .pic2 {
+            left: 200px;
+            top: 0px;
+            transform: rotate(-20deg);
+        }
+        
+        .pic3 {
+            right: 10px;
+            bottom: 200px;
+            transform: rotate(5deg);
+        }
+        
+        .pic4 {
+            top: 200px;
+            left: 300px;
+            transform: rotate(-10deg);
+        }
+        
+        .pic5 {
+            bottom: 0px;
+            right: 0px;
+            transform: rotate(-10deg);
+        }
+        
+        .pic6 {
+            left: 0px;
+            bottom: 0px;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="pic pic1" src="images/11.jpg" />
+        <img class="pic pic2" src="images/22.JPG" />
+        <img class="pic pic3" src="images/33.JPG" />
+        <img class="pic pic4" src="images/44.JPG" />
+        <img class="pic pic5" src="images/55.JPG" />
+        <img class="pic pic6" src="images/66.JPG" />
+    </div>
+</body>
+
+</html>
